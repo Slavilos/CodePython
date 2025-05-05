@@ -1,0 +1,125 @@
+.python-quiz-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #303030;
+    border-radius: 8px;
+    text-align: left;
+    color: var(--main-text-color); /* Используем переменную для основного цвета текста */
+    line-height: 1.6;
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center the quiz */
+  }
+  
+  .python-quiz-container h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .python-quiz-container h3 {
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .python-quiz-container p {
+    font-size: 0.9em;
+    color: var(--secondary-text-color); /* Используем переменную для вторичного цвета текста */
+    margin-bottom: 10px;
+  }
+  
+  /* Стили для вопросов и ответов */
+  .python-quiz-container .question {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .python-quiz-container .options {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .python-quiz-container .options li {
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: var(--main-text-color);
+  }
+  
+  .python-quiz-container .options li:hover,
+  .python-quiz-container .options li.selected {
+    background-color: #555;
+  }
+  
+  /* Стили для кнопки */
+  .python-quiz-container button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .python-quiz-container button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .python-quiz-container button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Стили для результатов */
+  .python-quiz-container .results-section {
+    margin-top: 20px;
+  }
+  
+  /* Стили для code challenge */
+  .python-quiz-container .code-challenge {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .python-quiz-container .code-challenge h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .python-quiz-container .code-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #555;
+    color: var(--main-text-color);
+    font-family: monospace;
+  }
+  
+  .python-quiz-container .code-result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .python-quiz-container .code-result.correct {
+    background-color: rgba(76, 175, 80, 0.3); /* Green with transparency */
+    color: #98c379; /* Use a green color from your theme */
+  }
+  
+  .python-quiz-container .code-result.incorrect {
+    background-color: rgba(244, 67, 54, 0.3); /* Red with transparency */
+    color: #e06c75; /* Use a red color from your theme */
+  }

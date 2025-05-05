@@ -1,0 +1,19 @@
+/* Contact.css */
+.contact-page {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-map {
+    margin-top: 30px;
+  }
+  

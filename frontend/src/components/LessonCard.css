@@ -1,0 +1,35 @@
+.lesson-card {
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card.completed {
+  border-left: 4px solid var(--success-color);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.lesson-header h4 {
+  font-size: 1.2rem;
+}
+
+.completed-badge {
+  background: var(--success-color);
+  color: var(--bg-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.lesson-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+} 
