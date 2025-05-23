@@ -248,7 +248,7 @@ app.use((err, req, res, next) => {
 });
 
 // Запуск сервера
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const createTestCourse = async () => {
   try {
@@ -301,15 +301,16 @@ const createTestCourse = async () => {
 const startServer = async () => {
   try {
     // Создаем временное подключение для создания базы данных
-    const tempSequelize = new Sequelize('mysql', 'root', '', {
-      host: 'localhost',
-       port: 3307,
+    const tempSequelize = new Sequelize('mysql', 'codepython', '7KsycuFIlChyG20FuUuQqodadkwYZ4LB', {
+      host: 'dpg-d0o0o7ali9vc73fhqe20-a',
+       port: 5432,
       dialect: 'mysql'
     });
 
-    // Создаем базу данных, если она не существует
-    await tempSequelize.query('CREATE DATABASE IF NOT EXISTS codepython;');
-    await tempSequelize.close();
+
+    // // Создаем базу данных, если она не существует
+    // await tempSequelize.query('CREATE DATABASE IF NOT EXISTS codepython;');
+    // await tempSequelize.close();
 
     // Проверка подключения к базе данных
     await sequelize.authenticate();
