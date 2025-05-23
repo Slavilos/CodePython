@@ -248,7 +248,7 @@ app.use((err, req, res, next) => {
 });
 
 // Запуск сервера
-const PORT = process.env.PORT || 3000;
+const PORT = 10000;
 
 const createTestCourse = async () => {
   try {
