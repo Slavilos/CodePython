@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Frontend and Backend",
+			"type": "shell",
+			"command": "cd backend && npm start && cd ../frontend && npm start",
+			"isBackground": true,
+			"problemMatcher": [
+				"$eslint-stylish"
+			]
+		}
+	]
+}

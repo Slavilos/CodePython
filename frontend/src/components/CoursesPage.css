@@ -1,0 +1,255 @@
+.courses-page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.courses-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  -webkit-text-fill-color: black;
+}
+
+.courses-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.courses-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card.active {
+  border-color: var(--accent-primary);
+}
+
+.course-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.course-progress {
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress {
+  height: 100%;
+  background: var(--accent-primary);
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.course-content {
+  background: var(--card-bg);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.course-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lesson-card {
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card.completed {
+  border-left: 4px solid var(--success-color);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.lesson-header h3 {
+  font-size: 1.2rem;
+}
+
+.completed-badge {
+  background: var(--success-color);
+  color: var(--bg-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.lesson-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .courses-content {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-header h1 {
+    font-size: 2rem;
+  }
+
+  .course-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.tests-section {
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tests-section h3 {
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+}
+
+.test-question {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.test-question:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--bg-primary);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-label:hover {
+  background: var(--hover-bg);
+}
+
+.option-label input[type="radio"] {
+  margin: 0;
+}
+
+.code-section {
+  margin-top: 2rem;
+}
+
+.code-section h3 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.code-requirements {
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-requirements h4 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.code-requirements ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.code-requirements li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.code-requirements li:last-child {
+  margin-bottom: 0;
+}

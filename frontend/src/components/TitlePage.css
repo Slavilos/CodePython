@@ -1,0 +1,108 @@
+.title-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-primary);
+}
+
+.title-content {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--bg-secondary);
+  max-width: 600px;
+  width: 90%;
+}
+
+.animated-logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.title-content h1 {
+  font-size: 3rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.description p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.login-button {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  background: var(--accent-secondary);
+}
+
+.developer-info {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.developer-info p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .title-content {
+    padding: 1.5rem;
+  }
+
+  .animated-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title-content h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .login-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .developer-info {
+    font-size: 0.8rem;
+  }
+}

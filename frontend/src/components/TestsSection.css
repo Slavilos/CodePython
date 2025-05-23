@@ -1,0 +1,156 @@
+.tests-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  text-align: right;
+  margin-bottom: 10px;
+  color: #a7a7a7;
+  font-size: 14px;
+  width: 100%;
+}
+
+.question-block {
+  background-color: #ededed;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.question-text {
+  font-size: 18px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.answer-option {
+  display: block;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+  color: #333;
+  width: 100%;
+}
+
+.answer-option:hover {
+  background-color: #f0f8f5;
+  border-color: #a5d6a7;
+}
+
+.answer-option input {
+  margin-right: 10px;
+}
+
+.answer-option.selected {
+  background-color: #e8f5e9;
+  border-color: #66bb6a;
+  font-weight: bold;
+}
+
+.code-area {
+  width: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fefefe;
+}
+
+.result,
+.error {
+  margin-top: 15px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.result {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.check-button,
+.next-button,
+.submit-button {
+  background-color: #00c853;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 150px;
+}
+
+.check-button:hover,
+.next-button:hover,
+.submit-button:hover {
+  background-color: #009624;
+}
+
+@media (max-width: 768px) {
+  .tests-section {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .question-block {
+    padding: 15px;
+  }
+
+  .answer-option {
+    padding: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .check-button,
+  .next-button,
+  .submit-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,18 @@
+.assignment-card {
+  border: 2px solid red; /* Временный стиль для отладки */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.assignment-card h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.assignment-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}

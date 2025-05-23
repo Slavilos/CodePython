@@ -1,0 +1,39 @@
+.tests-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .practical-task {
+    margin-bottom: 30px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+  
+  .submit-practical-task {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-practical-task:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

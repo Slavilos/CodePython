@@ -1,0 +1,63 @@
+.lesson-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.lesson-card.completed {
+  border-left: 4px solid #4CAF50;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.lesson-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.completed-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.lesson-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.lesson-actions {
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.help-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.help-button:hover {
+  background-color: #1976D2;
+}
+
+.help-button:active {
+  background-color: #1565C0;
+} 

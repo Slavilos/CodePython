@@ -1,0 +1,36 @@
+.code-section {
+  margin-top: 2rem;
+}
+
+.code-section h4 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.code-requirements {
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-requirements h5 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.code-requirements ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.code-requirements li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.code-requirements li:last-child {
+  margin-bottom: 0;
+} 

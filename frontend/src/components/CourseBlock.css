@@ -1,0 +1,33 @@
+.block-card {
+  margin-bottom: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.block-card h3 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.block-card h3::before {
+  content: '📚';
+  font-size: 1.8rem;
+}
+
+.lessons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .lessons-list {
+    grid-template-columns: 1fr;
+  }
+} 

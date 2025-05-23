@@ -1,0 +1,122 @@
+/* Events.css */
+
+.events {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.events h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.no-events {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+  font-size: 18px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-header {
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.event-content h4 {
+  color: #34495e;
+  margin: 15px 0 8px 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-content h4::after {
+  content: '';
+  flex: 1;
+  margin-left: 10px;
+  height: 1px;
+  background-color: #eee;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 10px;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Цвета для оценок */
+.grade-badge[data-grade="5"] { background-color: #4CAF50; color: white; }
+.grade-badge[data-grade="4"] { background-color: #8BC34A; color: white; }
+.grade-badge[data-grade="3"] { background-color: #FFC107; color: #333; }
+.grade-badge[data-grade="2"] { background-color: #F44336; color: white; }
+.grade-badge[data-grade="Не выполнен"] { background-color: #9E9E9E; color: white; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .events {
+    padding: 15px;
+  }
+  
+  .events-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-header {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+  
+  .event-content {
+    padding: 15px;
+  }
+}
